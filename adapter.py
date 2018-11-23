@@ -33,7 +33,7 @@ class PositionAdapter :
 
     # rotate hand
     rotation = matrix[-1]
-    self._transformer.rotate(self._hand_channel, rotation)
+    self._transformer.rotate(self._arm_channels, rotation)
 
     # update
     self._ob.update()
